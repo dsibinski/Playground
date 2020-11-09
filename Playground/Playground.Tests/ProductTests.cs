@@ -17,12 +17,11 @@ namespace Playground.Tests
             product.ApplyBlackFridayDiscount();
 
             // then
-            product.Discount.Should().NotBeNull();
-            product.Discount.Name.Should().Be("Black Friday");
-            product.Discount.PercentageValue.Should().Be(20);
-            product.OriginalPrice.Should().NotBe(product.SalesPrice);
-            product.SalesPrice.Should().Be(80);
-            product.IsAvailable.Should().Be(true);
+            var productShould = new ProductAssert(product);
+            productShould
+                .BeAvailable()
+                .HaveDiscount("Black Friday", 20)
+                .Cost(80);
         }
 
         private Product CreateProduct()
