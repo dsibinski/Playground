@@ -6,12 +6,12 @@ namespace Playground.Warehouse
     {
         public Guid Id { get; set; }
         public string Name { get; set; }
-        public decimal OriginalPrice { get; set; }
+        public decimal BasePrice { get; set; }
         public Discount Discount { get; set; }
         public int Quantity { get; set; }
 
         public bool IsAvailable => Quantity > 0;
-        public decimal SalesPrice => OriginalPrice - (OriginalPrice * Discount?.PercentageValue / 100) ?? OriginalPrice;
+        public decimal SalesPrice => BasePrice - (BasePrice * Discount?.PercentageValue / 100) ?? BasePrice;
 
         public void ApplyBlackFridayDiscount()
         {

@@ -23,10 +23,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f27b8379-6286-4a57-9b48-2454be37d999" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Playground.Tests/ProductAssert.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Playground/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Playground/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Playground/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Playground/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground.Tests/ProductTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Playground.Tests/ProductTests.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +89,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604946011814</updated>
-      <workItem from="1604946022091" duration="4445000" />
+      <workItem from="1604946022091" duration="5279000" />
     </task>
     <servers />
   </component>

@@ -11,7 +11,7 @@ namespace Playground.Tests
         public void ApplyBlackFridayDiscount_Should_ApplyBlackFridayDiscount_When_CalledOnNewProduct()
         {
             // given
-            var product = CreateProduct();
+            var product = CreateProduct(basePrice: 100);
             
             // when
             product.ApplyBlackFridayDiscount();
@@ -24,13 +24,13 @@ namespace Playground.Tests
                 .Cost(80);
         }
 
-        private Product CreateProduct()
+        private Product CreateProduct(decimal basePrice)
         {
             return new Product
             {
                 Id = Guid.NewGuid(),
                 Name = "Air Pods",
-                OriginalPrice = 100,
+                BasePrice = basePrice,
                 Quantity = 1000
             };
         }

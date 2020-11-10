@@ -17,7 +17,7 @@ namespace Playground.Tests
             _product.Discount.Should().NotBeNull();
             _product.Discount.Name.Should().Be(name);
             _product.Discount.PercentageValue.Should().Be(value);
-            _product.OriginalPrice.Should().NotBe(_product.SalesPrice);
+            _product.BasePrice.Should().NotBe(_product.SalesPrice);
             return this;
         }
         
