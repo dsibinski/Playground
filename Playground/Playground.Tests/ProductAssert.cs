@@ -29,7 +29,7 @@ namespace Playground.Tests
 
         public ProductAssert Cost(decimal price)
         {
-            _product.SalesPrice.Should().Be(80);
+            _product.SalesPrice.Should().Be(price);
             return this;
         }
     }
